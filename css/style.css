@@ -1,0 +1,255 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: auto;
+}
+
+/* navbar */
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.logo{
+	margin: 5px 0px 5px 5px;
+	margin-right: auto;
+	width: 50px;
+}
+.navbar{
+	display: flex;
+	justify-content: flex-end;
+}
+.navbar a{
+	margin-top: 5px;
+	padding: 15px 10px 0px 10px;
+	text-align: center;
+	color: black;
+	font-size: 18px;
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+	display: flex;
+}
+.navbar a:hover{
+	margin-bottom: 5px;
+	background: #ffde3d;
+	color: black;
+}
+
+/* hero */
+#hero{
+	margin-top: 100px;
+}
+.hero{
+	padding: 0px 10px 0px 10px;
+}
+.hero-title{
+	font-family: 'Poppins', sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+}
+.hero-subtitle{
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	padding: 20px 0px 20px 0px;
+}
+.hero-img{
+	width: 100%;
+	height: auto;
+}
+.hero-line{
+	margin-top: 70px;
+}
+
+/* course */
+#course{
+	margin-top: 70px;
+	margin-bottom: 100px;
+}
+.course{
+	margin: 0px 10px 0px 10px;
+}
+.course-title{
+	font-family: 'Poppins', sans-serif;
+	font-size: 35px;
+	font-weight: 600;
+	text-align: center;
+}
+.course-subtitle{
+	padding-top: 20px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	text-align: center;
+}
+.course-s{
+	padding-top: 50px;
+	display: flex;
+	justify-content: space-evenly;
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	text-align: center;
+}
+.course-s-img{
+	width: 200px;
+	height: 200px;
+}
+
+/* credbar */
+#credbar{
+	display: flex;
+}
+.social{
+	text-align: center;
+}
+.icons{
+	margin-top: 50px;
+	margin-bottom: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 40px;
+	height: 40px;
+}
+.credit{
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+.credit-title{
+	font-size: 17px;
+}
+.credit-subtitle{
+	padding-top: 20px;
+	font-size: 13px;
+}
+.credit-builder{
+	padding-top: 5px;
+	padding-bottom: 20px;
+	font-size: 15px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+/* media query */
+@media only screen and (max-width: 600px){
+	/* navbar */
+	.navbar{
+		flex-direction: column;
+	}
+	.navbar a{
+		padding: 5px 10px 0px 10px;
+		font-size: 15px;
+	}
+	.logo{
+		width: 30px;
+		margin-left: 10px;
+	}
+
+	/* hero */
+	#hero{
+		margin-top: 130px;
+	}
+	.hero-title{
+		font-size: 20px;
+	}
+	.hero-subtitle{
+		font-size: 10px;
+    	padding: 10px 0px 10px 0px;
+	}
+	.hero-line{
+		margin-top: 35px;
+	}
+
+	/* course */
+	#course{
+		margin-top: 35px;
+		margin-bottom: 50px;
+	}
+	.course-title{
+		font-size: 17px;
+	}
+	.course-subtitle{
+		padding-top: 10px;
+		font-size: 8px;
+	}
+	.course-s{
+		padding-top: 25px;
+		flex-direction: column;
+		font-size: 15px;
+	}
+	.course-s-img{
+		margin-top: 5px;
+		width: 100px;
+		height: 100px;
+	}
+
+	/* credbar */
+	.icons{
+		margin-top: 25px;
+		margin-bottom: 20px;
+		padding-left: 5px;
+		padding-right: 5px;
+		width: 20px;
+		height: 20px;
+	}
+	.credit-title{
+		font-size: 14px;
+	}
+	.credit-subtitle{
+		padding-top: 10px;
+		font-size: 10px;
+	}
+	.credit-builder{
+		padding-top: 3px;
+		padding-bottom: 10px;
+		font-size: 12px;
+		font-family: 'Times New Roman', Times, serif;
+	}
+}

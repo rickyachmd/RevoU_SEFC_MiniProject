@@ -1,0 +1,199 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: auto;
+}
+
+/* navbar */
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.logo{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.navbar{
+	display: flex;
+	justify-content: flex-end;
+}
+.navbar a{
+	margin-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 15px;
+	text-align: center;
+	color: black;
+	font-size: 18px;
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+	display: flex;
+}
+.navbar a:hover{
+	margin-bottom: 5px;
+	background: #ffde3d;
+	color: black;
+}
+.logo{
+	margin-right: auto;
+}
+
+/* profile */
+#profile{
+    margin-top: 100px;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-name{
+    font-family: 'Poppins', sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+}
+.profile-desc{
+    font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	margin-top: 20px;
+    margin-bottom: 20px;
+}
+.profile-img{
+    width: 800px;
+	height: 100%;
+}
+.profile-line{
+    margin-top: 70px;
+}
+
+/* value */
+#value{
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+.value-title{
+    font-family: 'Poppins', sans-serif;
+	font-size: 35px;
+	font-weight: 600;
+	text-align: center;
+    margin-bottom: 40px;
+}
+.value-box{
+    font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.box-title{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.left .box{
+    background-color: #ffde3d;
+    width: 800px;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: left;
+}
+.right .box{
+    background-color: #ffde3d;
+    width: 800px;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    text-align: right;
+}
+
+/* credbar */
+#credbar{
+	display: flex;
+}
+.social{
+	text-align: center;
+}
+.icons{
+	margin-top: 50px;
+	margin-bottom: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 40px;
+	height: 40px;
+}
+.credit{
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+}
+.credit-title{
+	font-size: 17px;
+}
+.credit-subtitle{
+	padding-top: 20px;
+	font-size: 13px;
+}
+.credit-builder{
+	padding-top: 5px;
+	padding-bottom: 20px;
+	font-size: 15px;
+	font-family: 'Times New Roman', Times, serif;
+}

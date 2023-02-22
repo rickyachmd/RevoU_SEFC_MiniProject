@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image" href="assets/RevoU.png">
+        <link rel="stylesheet" href="css/style.css">
+        <title>RevoU SEFC Mini Project</title>
+    </head>
+    
+    <body>
+        <!--navbar-->
+        <header style="background-color: whitesmoke">
+            <div class="container">
+                <nav class="navbar">
+                    <img src="assets/RevoU.png" class="logo">
+                    <a href="index.html">HOME</a>
+                    <a href="profile.html">OUR PROFILE</a>
+                    <a href="message.html">MESSAGE US!</a>
+                </nav>
+            </div>
+        </header>
+
+        <!--main content-->
+        <main>
+            <!--hero-->
+            <section id="hero">
+                <div class="container">
+                    <div class="hero">
+                        <h1 class="hero-title">Hi <span id="visitor"></span>, Welcome to RevoU Fundamental Course</h1>
+
+                        <script>
+                            var name = prompt("Who's visiting?");
+                            document.getElementById("visitor").innerText = name;
+                        </script>
+
+                        <p class="hero-subtitle">This is Ricky's RevoU SEFC Mini Project</p>
+                        <img class="hero-img" src="assets/RevoU_Banner.png" alt="banner">
+                        <img class="hero-img" src="assets/RevoU_Banner2.png" alt="banner">
+                        <img class="hero-img" src="assets/RevoU_Banner3.png" alt="banner">
+
+                        <script>
+                            var slideIndex = 1;
+                            showDivs(slideIndex);
+
+                            function plusDivs(n){
+                                showDivs((slideIndex += n));
+                            }
+
+                            function showDivs(n){
+                                var i;
+                                var imgList = document.getElementsByClassName("hero-img");
+                                if (n > imgList.length) slideIndex = 1;
+                                else if (n < 1) slideIndex = imgList.length;
+
+                                for (i = 0; i < imgList.length; i++){
+                                    imgList[i].style.display="none";
+                                }
+
+                                imgList[slideIndex - 1].style.display="block";
+                            }
+
+                            setInterval(() => {
+                                plusDivs(1);
+                            }, 1500);
+                        </script>
+                    </div>
+                    <hr class="hero-line">
+                </div>
+            </section>
+            
+            <!--course-->
+            <section id="course">
+                <div class="container">
+                    <div class="course">
+                        <h1 class="course-title">RevoU Free Courses</h1>
+                        <p class="course-subtitle">INTRO PROGRAMS (2-WEEKS)</p>
+
+                        <div class="course-s">
+                            <div class="free-1">
+                                <a href="https://revou.co/mini-course-digital-marketing"><img src="assets/RevoU_DigitalMarketing.jpg" alt="Digital Marketing" class="course-s-img"></a>
+                                <h2>Digital Marketing</h2>
+                            </div>
+                            <div class="free-2">
+                                <a href="https://revou.co/mini-course-data-analytics"><img src="assets/RevoU_DataAnalytics.jpg" alt="Data Analytics" class="course-s-img"></a>
+                                <h2>Data Analytics</h2>
+                            </div>
+                            <div class="free-3">
+                                <a href="https://revou.co/mini-course-product-management"><img src="assets/Revou_ProductManagement.jpg" alt="Product Management" class="course-s-img"></a>
+                                <h2>Product Management</h2>
+                            </div>
+                            <div class="free-4">
+                                <a href="https://revou.co/fundamental-course-software-engineering"><img src="assets/RevoU_SoftwareEngineering.jpg" alt="Software Engineering" class="course-s-img"></a>
+                                <h2>Software Engineering</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--credbar-->
+        <footer style="background-color: grey;">
+            <div class="container">
+                <nav class="credbar">
+                    <div class="social">
+                        <a href="https://www.instagram.com/rickyachmd/"><img src="assets/instagram.png" class="icons"></a>
+                        <a href="mailto:rickyachmd2002@gmail.com"><img src="assets/email.png" class="icons"></a>
+                        <a href="#"><img src="assets/linkedin.png" class="icons"></a>
+                        <a href="https://github.com/rickyachmd"><img src="assets/github.png" class="icons"></a>
+                    </div>
+
+                    <div class="credit">
+                        <h3 class="credit-title">Software Engineer Fundamental Course Mini Project</h3>
+                        <p class="credit-subtitle">Sincerely Forever Student</p>
+                        <p class="credit-builder">Ricky Achmad Hidayat &copy; 2022</p>
+                    </div>
+                </nav>
+            </div>
+        </footer>
+    </body>
+
+</html>

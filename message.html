@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image" href="assets/RevoU.png">
+        <link rel="stylesheet" href="css/message.css">
+        <title>RevoU SEFC Mini Project</title>
+    </head>
+    <body>
+        <!--navbar-->
+        <header style="background-color: whitesmoke">
+            <div class="container">
+                <nav class="navbar">
+                    <img src="assets/RevoU.png"
+                    class="logo"
+                    width="50"
+                    height="50"/>
+                    <a href="index.html">HOME</a>
+                    <a href="profile.html">OUR PROFILE</a>
+                    <a href="message.html">MESSAGE US!</a>
+                </nav>
+            </div>
+        </header>
+
+        <!--main content-->
+        <main>
+            <!--message-->
+            <section id="message">
+                <div class="container">
+                    <h1 class="form-title">Type Your Message</h1>
+
+                    <div class="form">
+                        <form class="form-input" name="form-input" onsubmit="return validateForm()">
+                            <form action="">
+                                <!--name-->
+                                <div class="input-group">
+                                    <label class="label">Name</label> : &ThinSpace;
+                                    <div class="textbox">
+                                        <input type="text" name="name" placeholder="Name">
+                                    </div>
+                                </div>
+                                <!--dob-->
+                                <div class="input-group">
+                                    <label class="label">Date of Birth</label> : &ThinSpace;
+                                    <div class="textbox">
+                                        <input type="date" name="dob" id="">
+                                    </div>
+                                </div>
+                                <!--gender-->
+                                <div class="input-group">
+                                    <label class="label">Gender</label> : &ThinSpace;
+                                    <div class="textbox">
+                                        <div>
+                                            <input type="radio" id="male" name="gender" value="Male">
+                                            <label class="label" for="male">Male</label>
+                                            <input type="radio" id="female" name="gender" value="Female">
+                                            <label class="label" for="female">Female</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--msg-->
+                                <div class="input-group">
+                                    <label class="label">Message</label>  : &ThinSpace;
+                                    <div class="textbox">
+                                        <textarea name="messages" id="" cols="30" rows="3" placeholder="Type here"></textarea>
+                                    </div>
+                                </div>
+                                <input type="submit" value="Submit">
+                            </form>
+
+                            <script>
+                                function validateForm() {
+                                    var name = document.forms["form-input"]["name"].value;
+                                    var dob = document.forms["form-input"]["dob"].value;
+                                    var gender = document.forms["form-input"]["gender"].value;
+                                    var messages = document.forms["form-input"]["messages"].value;
+
+                                    document.getElementById("name-output").innerText = name;
+                                    document.getElementById("dob-output").innerText = dob;
+                                    document.getElementById("gender-output").innerText = gender;
+                                    document.getElementById("messages-output").innerText = messages;
+                                    return false;
+                                }
+                            </script>
+                        </form>
+
+                        <div class="form-output">
+                            <div class="container">
+                                <div class="form-content">
+                                        <p class="content-para">Hi, i'm <span id="name-output"></span></p>
+                                        <p class="content-para">I was born on <span id="dob-output"></span></p>
+                                        <p class="content-para">I'm a <span id="gender-output"></span></p>
+                                        <p class="content-para">Here is my message for RevoU: <span id="messages-output"></span></p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+    
+        <!--credbar-->
+        <footer style="background-color: grey;">
+            <div class="container">
+                <nav class="credbar">
+                    <div class="social">
+                        <a href="https://www.instagram.com/rickyachmd/"><img src="assets/instagram.png" class="icons"></a>
+                        <a href="mailto:rickyachmd2002@gmail.com"><img src="assets/email.png" class="icons"></a>
+                        <a href="#"><img src="assets/linkedin.png" class="icons"></a>
+                        <a href="https://github.com/rickyachmd"><img src="assets/github.png" class="icons"></a>
+                    </div>
+                    <div class="credit">
+                        <h3 class="credit-title">Software Engineer Fundamental Course Mini Project</h3>
+                        <p class="credit-subtitle">Sincerely Forever Student</p>
+                        <p class="credit-builder">Ricky Achmad Hidayat &copy; 2022</p>
+                    </div>
+                </nav>
+            </div>
+        </footer>
+
+</html>
