@@ -205,7 +205,7 @@ header{
 }
 
 /* media query */
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 767px){
 	/* navbar */
 	.navbar{
 		flex-direction: column;
@@ -216,8 +216,7 @@ header{
 		font-size: 15px;
 	}
 	.logo{
-		width: 30px;
-		margin-left: 10px;
+		display: none;
 	}
 	.navbar a.active, .navbar a:hover{
 		margin: 0px;
@@ -227,7 +226,7 @@ header{
 
 	/* hero */
 	#hero{
-		margin-top: 130px;
+		margin-top: 80px;
 	}
 	.hero-title{
 		font-size: 20px;
@@ -250,17 +249,33 @@ header{
 	}
 	.course-subtitle{
 		padding-top: 10px;
-		font-size: 8px;
+		font-size: 10px;
 	}
 	.course-s{
+		align-items: center;
 		padding-top: 25px;
 		flex-direction: column;
 		font-size: 15px;
 	}
 	.course-s-img{
 		margin-top: 5px;
-		width: 100px;
-		height: 100px;
+		width: 60%;
+		height: auto;
+	}
+	.free{
+		width: 60%;
+    	margin-bottom: 10px;
+    	text-align: center;
+	}
+	.free h2{
+		font-size: 15px;
+		font-weight: 600;
+		padding-top: 10px;
+	}
+	.free p{
+		width: 100%;
+		font-size: 10px;
+		padding-top: 7px;
 	}
 
 	/* credbar */
@@ -292,5 +307,18 @@ header{
 		padding-bottom: 5px;
 		font-size: 10px;
 		font-family: 'Times New Roman', Times, serif;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+	.course-s{
+		flex-wrap: wrap;
+		padding-top: 25px;
+	}
+	.free{
+		margin-top: 25px;
+	}
+	.course-s-img{
+		width: 250px;
+		height: 250px;
 	}
 }

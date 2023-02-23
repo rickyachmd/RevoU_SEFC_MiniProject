@@ -93,6 +93,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+	padding: 0px 10px 0px 10px;
 }
 .profile-name{
     font-family: 'Poppins', sans-serif;
@@ -102,12 +103,11 @@ header{
 .profile-desc{
     font-family: 'Poppins', sans-serif;
 	font-size: 20px;
-	margin-top: 20px;
-    margin-bottom: 20px;
+	padding: 20px 0px 20px 0px;
 }
 .profile-img{
-    width: 800px;
-	height: 100%;
+    width: 70%;
+	height: auto;
 }
 .profile-line{
     margin-top: 70px;
@@ -117,6 +117,9 @@ header{
 #value{
     margin-top: 70px;
     margin-bottom: 100px;
+}
+.value{
+	margin: 0px 10px 0px 10px;
 }
 .value-title{
     font-family: 'Poppins', sans-serif;
@@ -128,6 +131,7 @@ header{
 .value-box{
     font-family: 'Poppins', sans-serif;
 	font-size: 20px;
+	margin: 0px 10px 0px 10px;
 }
 .left{
     display: flex;
@@ -207,7 +211,7 @@ header{
 }
 
 /* media query */
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 767px){
 	/* navbar */
 	.navbar{
 		flex-direction: column;
@@ -218,13 +222,66 @@ header{
 		font-size: 15px;
 	}
 	.logo{
-		width: 30px;
-		margin-left: 10px;
+		display: none;
 	}
 	.navbar a.active, .navbar a:hover{
 		margin: 0px;
 		background: #ffde3d;
 		transition: .5s;
+	}
+
+	/* profile */
+	#profile{
+		margin-top: 80px;
+	}
+	.profile-name{
+		font-size: 20px;
+	}
+	.profile-desc{
+		font-size: 10px;
+    	padding: 10px 0px 10px 0px;
+	}
+	.profile-line{
+		margin-top: 35px;
+	}
+
+	/* value */
+	#value{
+		margin-top: 35px;
+		margin-bottom: 50px;
+	}
+	.value-title{
+		font-size: 17px;
+	}
+	.value-box{
+		font-size: 10px;
+	}
+	.left{
+		align-items: center;
+	}
+	.right{
+		align-items: center;
+	}
+	.box-title{
+		font-size: 13px;
+		font-weight: 600;
+		margin-bottom: 10px;
+	}
+	.left .box{
+		background-color: #ffde3d;
+		width: 100%;
+		padding: 5px;
+		border-radius: 15px;
+		text-align: center;
+	}
+	.right .box{
+		background-color: #ffde3d;
+		width: 100%;
+		padding: 5px;
+		border-radius: 15px;
+		text-align: center;
+		margin-top: 15px;
+		margin-bottom: 15px;
 	}
 
 	/* credbar */
@@ -256,5 +313,20 @@ header{
 		padding-bottom: 5px;
 		font-size: 10px;
 		font-family: 'Times New Roman', Times, serif;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+	.left{
+		align-items: center;
+	}
+	.right{
+		align-items: center;
+	}.left .box{
+		text-align: center;
+		width: 700px;
+	}
+	.right .box{
+		text-align: center;
+		width: 700px;
 	}
 }
