@@ -70,19 +70,18 @@ header{
 	justify-content: flex-end;
 }
 .navbar a{
-	margin-top: 5px;
-	padding: 15px 10px 0px 10px;
+	padding: 20px 10px 0px 10px;
 	text-align: center;
 	color: black;
 	font-size: 18px;
 	font-family: 'Poppins', sans-serif;
 	text-decoration: none;
+	text-transform: uppercase;
 	display: flex;
 }
-.navbar a:hover{
-	margin-bottom: 5px;
+.navbar a.active, .navbar a:hover{
 	background: #ffde3d;
-	color: black;
+	transition: .5s;
 }
 
 /* profile */
