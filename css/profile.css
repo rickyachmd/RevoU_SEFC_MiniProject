@@ -201,6 +201,7 @@ header{
 	padding-right: 10px;
 	padding-top: 10px;
 	font-size: 20px;
+	color: #ffde3d;
 }
 .credit-builder{
 	padding-right: 10px;
@@ -214,11 +215,11 @@ header{
 @media only screen and (max-width: 767px){
 	/* navbar */
 	.navbar{
-		flex-direction: column;
 		margin-bottom: 5px;
+		justify-content: center;
 	}
 	.navbar a{
-		padding: 5px 10px 0px 10px;
+		padding: 5px 10px 5px 10px;
 		font-size: 15px;
 	}
 	.logo{
@@ -232,7 +233,7 @@ header{
 
 	/* profile */
 	#profile{
-		margin-top: 80px;
+		margin-top: 50px;
 	}
 	.profile-name{
 		font-size: 20px;
@@ -284,7 +285,6 @@ header{
 		margin-bottom: 15px;
 	}
 
-	/* credbar */
 	.credit{
 		text-align: right;
 	}
@@ -292,21 +292,22 @@ header{
 		text-align: right;
 	}
 	.icons{
-		margin-top: 20px;
+		margin-top: 10px;
 		margin-bottom: 10px;
-		margin-right: 5px;
-		padding-left: 5px;
-		padding-right: 5px;
+		margin-right: 10px;
+		padding-left: 0px;
+		padding-right: 0px;
 		width: 20px;
 		height: 20px;
 	}
 	.credit-title{
 		padding-top: 25px;
-		font-size: 15px;
+		font-size: 20px;
 	}
 	.credit-subtitle{
-		padding-top: 5px;
-		font-size: 10px;
+		padding-top: 10px;
+		font-size: 15px;
+		color: #ffde3d;
 	}
 	.credit-builder{
 		padding-top: 5px;

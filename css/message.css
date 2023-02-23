@@ -207,6 +207,7 @@ input[type="text"], input[type="date"], textarea {
 	padding-right: 10px;
 	padding-top: 10px;
 	font-size: 20px;
+	color: #ffde3d;
 }
 .credit-builder{
 	padding-right: 10px;
@@ -220,11 +221,11 @@ input[type="text"], input[type="date"], textarea {
 @media only screen and (max-width: 767px){
 	/* navbar */
 	.navbar{
-		flex-direction: column;
 		margin-bottom: 5px;
+		justify-content: center;
 	}
 	.navbar a{
-		padding: 5px 10px 0px 10px;
+		padding: 5px 10px 5px 10px;
 		font-size: 15px;
 	}
 	.logo{
@@ -238,7 +239,7 @@ input[type="text"], input[type="date"], textarea {
 
 	/* message */
 	#message{
-		margin-top: 80px;
+		margin-top: 50px;
 		margin-bottom: 50px;
 	}
 	.form{
@@ -267,7 +268,6 @@ input[type="text"], input[type="date"], textarea {
 		font-size: 13px;
 	}
 
-	/* credbar */
 	.credit{
 		text-align: right;
 	}
@@ -275,21 +275,22 @@ input[type="text"], input[type="date"], textarea {
 		text-align: right;
 	}
 	.icons{
-		margin-top: 20px;
+		margin-top: 10px;
 		margin-bottom: 10px;
-		margin-right: 5px;
-		padding-left: 5px;
-		padding-right: 5px;
+		margin-right: 10px;
+		padding-left: 0px;
+		padding-right: 0px;
 		width: 20px;
 		height: 20px;
 	}
 	.credit-title{
 		padding-top: 25px;
-		font-size: 15px;
+		font-size: 20px;
 	}
 	.credit-subtitle{
-		padding-top: 5px;
-		font-size: 10px;
+		padding-top: 10px;
+		font-size: 15px;
+		color: #ffde3d;
 	}
 	.credit-builder{
 		padding-top: 5px;
