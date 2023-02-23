@@ -70,7 +70,7 @@ header{
 	justify-content: flex-end;
 }
 .navbar a{
-	padding: 20px 10px 0px 10px;
+	padding: 15px 10px 0px 10px;
 	text-align: center;
 	color: black;
 	font-size: 18px;
@@ -80,6 +80,7 @@ header{
 	display: flex;
 }
 .navbar a.active, .navbar a:hover{
+	margin: 5px;
 	background: #ffde3d;
 	transition: .5s;
 }
@@ -186,14 +187,17 @@ header{
 	color: white;
 }
 .credit-title{
+	padding-right: 10px;
 	padding-top: 50px;
 	font-size: 25px;
 }
 .credit-subtitle{
+	padding-right: 10px;
 	padding-top: 10px;
 	font-size: 20px;
 }
 .credit-builder{
+	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-size: 18px;
@@ -205,6 +209,7 @@ header{
 	/* navbar */
 	.navbar{
 		flex-direction: column;
+		margin-bottom: 5px;
 	}
 	.navbar a{
 		padding: 5px 10px 0px 10px;
@@ -213,6 +218,11 @@ header{
 	.logo{
 		width: 30px;
 		margin-left: 10px;
+	}
+	.navbar a.active, .navbar a:hover{
+		margin: 0px;
+		background: #ffde3d;
+		transition: .5s;
 	}
 
 	/* hero */
@@ -254,25 +264,33 @@ header{
 	}
 
 	/* credbar */
+	.credit{
+		text-align: right;
+	}
+	.social{
+		text-align: right;
+	}
 	.icons{
-		margin-top: 25px;
-		margin-bottom: 20px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		margin-right: 5px;
 		padding-left: 5px;
 		padding-right: 5px;
 		width: 20px;
 		height: 20px;
 	}
 	.credit-title{
-		font-size: 14px;
+		padding-top: 25px;
+		font-size: 15px;
 	}
 	.credit-subtitle{
-		padding-top: 10px;
+		padding-top: 5px;
 		font-size: 10px;
 	}
 	.credit-builder{
-		padding-top: 3px;
-		padding-bottom: 10px;
-		font-size: 12px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 10px;
 		font-family: 'Times New Roman', Times, serif;
 	}
 }
